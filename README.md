@@ -52,7 +52,7 @@ Commercial Demand-Side Platforms provide direct access to global ad exchanges, s
 
 ## 🔓 Open-Source GitHub Projects
 
-Open-source Demand-Side Platforms, OpenRTB protocol specifications, header bidding engines, and ad server infrastructure. Sorted by GitHub stars (descending).
+Open-source Demand-Side Platforms, OpenRTB protocol specifications, header bidding engines, and ad server infrastructure. Sorted by GitHub_Stars (descending).
 
 - **[Prebid.js](https://github.com/prebid/Prebid.js)** [![Stars](https://img.shields.io/github/stars/prebid/Prebid.js?style=social&color=white)](https://github.com/prebid/Prebid.js/stargazers) ⚡  
   **The leading open-source header bidding library for web browsers.** Enables publishers to setup concurrent auctions across demand partners before calling the ad server. Written in JavaScript.
@@ -94,7 +94,7 @@ Open-source Demand-Side Platforms, OpenRTB protocol specifications, header biddi
 Contributions are welcome! Help us keep this directory accurate and up to date.
 
 1. **Fork** this repository.
-2. Add or update entries in `README.md` following the tabular and star badge formats.
+2. Add or update entries in `README.md` following the tabular and Stars_Badge formats.
 3. Ensure links, pricing, scale metrics, and GitHub links are verified.
 4. Submit a **Pull Request** with a brief summary of additions.
 
