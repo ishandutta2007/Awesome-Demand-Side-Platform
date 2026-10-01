@@ -1,235 +1,126 @@
-# Awesome-Demand-Side-Platform
-
-## Top Demand-Side Platform (DSP) Ecosystem
-
-
-
-**Curated List of SaaS Products & Open-Source GitHub Projects**  
-
-*Focused on Programmatic Advertising, Real-Time Bidding & Audience Targeting*  
-
-**Last updated: October 2026**
-
-
-
-This repository tracks notable **SaaS platforms** and **open-source projects** for **Demand-Side Platforms (DSP)**. These tools help advertisers and agencies automate the buying of digital ad inventory across display, video, mobile, and connected TV through real-time bidding (RTB).
-
-
-
-**Examples** include The Trade Desk, Google DV360, Amazon DSP, Adform, StackAdapt, Basis Technologies, Simpli.fi, Viant Technology, Yahoo DSP, and Smadex (the category leaders).
-
-
-
-**Open-source emphasis**: The open-source DSP ecosystem is **fragmented and largely historical**. Most active projects date from the early-to-mid 2010s when RTB was emerging. **RTB4FREE** and **vanilla-rtb** remain the most significant reference implementations, providing OpenRTB-compliant bidders and DSP frameworks . **Prebid Server** (Go/Java) is actively maintained and widely deployed, but it serves the **supply-side (header bidding)** rather than the demand side . **OpenAdServer** is a newer Python-based ad serving platform with ML-powered CTR prediction, though its RTB support is on the roadmap rather than production-ready . This section documents these focused solutions honestly.
-
-
-
-Contributions welcome! Open a PR to add/update entries. Keep descriptions factual and link to official sites.
-
-
-
-## Table of Contents
-
-
-
-- [SaaS/Hosted Platforms](#saas-hosted-platforms)
-
-- [Open-Source GitHub Projects](#open-source-github-projects)
-
-- [How to Contribute](#how-to-contribute)
-
-- [Disclaimer](#disclaimer)
-
-
-
-## SaaS/Hosted Platforms
-
-
-
-- **[The Trade Desk](https://www.thetradedesk.com/)**
-
-  The leading independent demand-side platform. Provides omnichannel programmatic buying across display, video, CTV, audio, and native. Known for transparency, data partnerships, and the Kokai AI platform.
-
-
-
-- **[Google DV360](https://displayvideo.google.com/)**
-
-  Google's enterprise DSP integrated with the Google Marketing Platform. Provides programmatic buying across YouTube, Google Display Network, and third-party exchanges with deep audience and measurement integration.
-
-
-
-- **[Amazon DSP](https://advertising.amazon.com/)**
-
-  Amazon's demand-side platform with unique access to Amazon's retail and streaming TV inventory. Provides audience targeting based on shopping behavior and Fire TV/IMDb TV inventory.
-
-
-
-- **[Adform](https://adform.com/)**
-
-  Integrated advertising platform with DSP, DMP, and ad server capabilities. Strong in European markets with omnichannel programmatic buying.
-
-
-
-- **[StackAdapt](https://www.stackadapt.com/)**
-
-  Multi-channel programmatic advertising platform. Provides DSP capabilities across native, display, video, CTV, audio, and DOOH with strong self-serve capabilities.
-
-
-
-- **[Basis Technologies](https://basis.com/)**
-
-  Programmatic advertising platform with DSP, workflow automation, and business intelligence. Serves agencies and brands with omnichannel buying.
-
-
-
-- **[Simpli.fi](https://simplifi/)**
-
-  Programmatic advertising platform specializing in addressable geo-fencing and unstructured data optimization. Strong in local and regional advertising.
-
-
-
-- **[Viant Technology](https://www.viantinc.com/)**
-
-  People-based DSP with household ID graph for omnichannel programmatic buying. Provides CTV, display, audio, and native inventory.
-
-
-
-- **[Yahoo DSP](https://www.yahooinc.com/)**
-
-  Yahoo's demand-side platform (formerly Verizon Media DSP). Provides programmatic buying with Yahoo's identity graph and premium inventory.
-
-
-
-- **[Smadex](https://smadex.com/)**
-
-  Mobile-first DSP specializing in programmatic user acquisition and retargeting for mobile apps and games.
-
-
-
-## Open-Source GitHub Projects
-
-
-
-### DSP Frameworks & Bidders
-
-
-
-- **[RTB4FREE](https://github.com/RTB4FREE/rtb4free)**  
-
-  **The most complete open-source DSP framework.** Provides an OpenRTB 2.0 compliant bidder with campaign management UI . The **bidder** repo has 87 stars and 55 forks, written in Java . Includes **campaign-manager** (26 stars) for campaign management and **rtb4free** core repo for documentation and API explorer . **Status**: Last updated approximately 2 years ago; historical reference implementation .
-
-
-
-- **[vanilla-rtb](https://github.com/venediktov/vanilla-rtb)**  
-
-  **Real Time Bidding (RTB) Demand Side Platform framework written in C++.** 328 stars, 87 forks . Provides a high-performance bidder framework. **rapid-bidder** (71 stars) is a DSP application built on the vanilla-rtb stack, last updated approximately 7-8 years ago . **Status**: Historical reference; not actively maintained .
-
-
-
-- **[OpenAdServer](https://github.com/pysean/openadserver)**  
-
-  **Self-hosted ad serving platform with ML-powered CTR prediction.** Provides a complete pipeline: **Retrieve → Filter → Predict → Rank → Return** . **Key features**: OpenRTB compatible (roadmap); **DeepFM CTR model** with AUC 0.72; PostgreSQL + Redis; Docker Compose deployment; Prometheus metrics; Grafana dashboards . **Tech stack**: Python 3.11+, FastAPI, PyTorch. **Status**: Active development; RTB support planned .
-
-
-
-- **[OpenDSP (javagossip)](https://github.com/javagossip/opendsp)**  
-
-  **Open-source mobile DSP advertising platform with built-in ADX integration and out-of-the-box dashboard.** 133 stars, updated April 2025 . Chinese-language project providing a complete mobile DSP solution.
-
-
-
-- **[RTBKit](https://github.com/rtbkit/rtbkit)**  
-
-  **Open-source software package for creating and deploying Real Time Bidders for display advertising.** 1,068 stars . **Status**: Last updated approximately 6 years ago; historical.
-
-
-
-### Supply-Side & Infrastructure (Adjacent)
-
-
-
-- **[Prebid Server](https://github.com/prebid/prebid-server)**  
-
-  **Open-source solution for server-to-server header bidding.** Go implementation with 574 stars, Apache-2.0 licensed . **Note**: This is **supply-side** (publisher) technology, not demand-side, but is the most actively maintained open-source ad tech project . Java version also available . **Prebid.js** (1,589 stars) handles client-side header bidding .
-
-
-
-- **[OpenRTB](https://github.com/openrtb/OpenRTB)**  
-
-  **Documentation and issue tracking for the OpenRTB Project.** 859 stars . The **OpenRTB specification** (405+ stars) defines the protocol for real-time bidding on digital media .
-
-
-
-- **[OpenRTB Models (Go)](https://github.com/mxmCherry/openrtb)**  
-
-  **OpenRTB protocol definitions for Go.** 288 stars, updated 2 months ago . Actively maintained library for Go-based RTB implementations.
-
-
-
-- **[OpenRTB Models (Java)](https://github.com/openrtb/openrtb2x)**  
-
-  **OpenRTB model for Java via protobuf with JSON serialization helpers.** 397 stars .
-
-
-
-- **[Revive Adserver](https://github.com/revive-adserver/revive-adserver)**  
-
-  **The most popular free open-source ad server.** Provides ad serving, targeting, and reporting. **Note**: Ad server, not a DSP; serves as the ad delivery infrastructure .
-
-
-
-### Additional Strong Open-Source Options
-
-
-
-- **DSP Frameworks**: **RTB4FREE** (Java, OpenRTB 2.0, historical) , **vanilla-rtb** (C++, high-performance, historical) , **OpenAdServer** (Python, ML-powered, active) .
-
-- **Mobile DSP**: **OpenDSP** (Java, ADX integration, 2025) .
-
-- **Infrastructure**: **Prebid Server** (Go/Java, supply-side, active) , **OpenRTB Models** (Go/Java, protocol definitions) .
-
-- **Ad Serving**: **Revive Adserver** (ad server, not DSP) .
-
-
-
-**Frameworks for building custom systems**: Combine **OpenAdServer** for ML-powered ad serving with CTR prediction, **RTB4FREE** or **vanilla-rtb** for reference DSP architecture, **OpenRTB Models** (Go or Java) for protocol definitions, and **Revive Adserver** for ad delivery infrastructure. Add **PostgreSQL** for data persistence, **Redis** for caching, and **Docker** for deployment.
-
-
-
-## How to Contribute
-
-
-
-1. Fork the repo.
-
-2. Add/edit entries in `README.md` (follow existing format).
-
-3. Include: name, link, 1–2 sentence description, and whether it's SaaS or open-source.
-
-4. Submit PR with a short explanation.
-
-
-
-Star the repo if you find it useful!
-
-
-
-## Disclaimer
-
-
-
-- This is a **community-curated** list — not exhaustive and not an endorsement.
-
-- DSP platforms handle sensitive advertising and audience data; ensure compliance with GDPR, CCPA, and applicable advertising regulations.
-
-- **Open-source reality**: The open-source ecosystem for demand-side platforms is **fragmented and largely historical**. Most DSP frameworks (**RTB4FREE**, **vanilla-rtb**, **RTBKit**) date from the early-to-mid 2010s and are no longer actively maintained . **Prebid Server** is the most actively maintained open-source ad tech project but serves the **supply side** (header bidding), not the demand side . **OpenAdServer** represents a newer generation of ML-powered ad serving, but its RTB support is planned rather than production-ready . **Commercial platforms** (The Trade Desk, DV360, Amazon DSP) provide **global inventory access, identity graphs, brand safety controls, and managed optimization** that open-source alternatives cannot match. The open-source path is most viable for **research, education, or building specialized internal ad tech infrastructure** rather than competing with commercial DSPs.
-
-
+# Awesome Demand-Side Platform (DSP) Ecosystem 🚀
+
+[![Banner](assets/banner.svg)](https://github.com/ishandutta2007/Awesome-Demand-Side-Platform)
+
+<p align="center">
+  <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a>
+  <a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Demand-Side-Platform"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Demand-Side-Platform?style=social" alt="Stars"/></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Demand-Side-Platform/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Demand-Side-Platform?style=social" alt="Forks"/></a>
+  <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
+</p>
 
 ---
 
+## 📌 Overview & Market Insights
 
+A curated list of top **Demand-Side Platforms (DSP)**, **Real-Time Bidding (RTB)** bidders, **OpenRTB protocol frameworks**, and **Programmatic Advertising** tools for ad tech engineers, growth marketers, and media buyers.
 
-**Made for ad tech engineers, programmatic advertisers, and RTB researchers.**
+> 💡 **Market Size & Structure**: The global Demand-Side Platform (DSP) market is estimated at **$30.8 Billion in 2026** and projected to reach **$85+ Billion by 2032** (CAGR ~18.5%). The market is **highly concentrated (tier-1 winner-take-most)** at the enterprise tier (dominated by Google DV360, The Trade Desk, and Amazon DSP holding >60% market share), while remaining **moderately fragmented** in niche verticals (CTV, mobile app user acquisition, regional/geo-fenced ad tech).
 
-Let's make demand-side platforms more open, transparent, and accessible.
+---
+
+## 📑 Table of Contents
+
+- [🏢 SaaS & Commercial Platforms](#-saas--commercial-platforms)
+- [🔓 Open-Source GitHub Projects](#-open-source-github-projects)
+- [🤝 How to Contribute](#-how-to-contribute)
+- [💖 Support & Community](#-support--community)
+- [⚠️ Disclaimer](#%EF%B8%8F-disclaimer)
+- [📈 Star History](#-star-history)
+
+---
+
+## 🏢 SaaS & Commercial Platforms
+
+Commercial Demand-Side Platforms provide direct access to global ad exchanges, supply-side platforms (SSPs), proprietary audience identity graphs, machine learning bidding engines, and brand safety controls.
+
+| Platform | Description | Pricing Model & Starting Tier | Free Tier / Trial Limit | Scale & Valuation / Revenue |
+| :--- | :--- | :--- | :--- | :--- |
+| **[Amazon DSP](https://advertising.amazon.com/)** 🛒 | Enterprise omnichannel & retail media DSP leveraging Amazon shopping data. | Managed service min. $35,000–$50,000/mo spend; Self-serve via select partners. | No free trial (Registration free, minimum spend required for live campaigns). | Market Cap **~$2.2 Trillion** (Amazon parent); Advertising Revenue **~$50B/yr**. |
+| **[Google DV360](https://displayvideo.google.com/)** 🌐 | Enterprise DSP integrated with Google Marketing Platform and YouTube inventory. | Direct contracts min. $100,000+/mo spend; Partner resellers offer lower commitments. | No free trial (Enterprise demo & agency sandbox available upon request). | Market Cap **~$2.1 Trillion** (Alphabet); Google Network/DV360 Revenue **~$30B+/yr**. |
+| **[The Trade Desk](https://www.thetradedesk.com/)** 📈 | Independent programmatic DSP specializing in Connected TV (CTV) and audio. | Direct enterprise seats min. $20,000–$100,000/mo media spend. | No free trial (Free access to Edge Academy learning platform). | Market Cap **~$6.0 Billion**; FY2025 Revenue **$2.90 Billion**. |
+| **[Yahoo DSP](https://www.yahooinc.com/)** 🟣 | Omnichannel DSP powered by Yahoo native data and premium identity graph. | Direct enterprise minimums starting at $10,000/mo spend. | No free trial (Self-serve demo environment upon sales approval). | Private company; Estimated Valuation **~$8.0 Billion** (Apollo Global); Revenue **~$4.5B/yr**. |
+| **[Viant Technology](https://www.viantinc.com/)** 📺 | People-based autonomous DSP powered by Adelphic identity graph and CTV focus. | Self-serve min. $2,500/mo spend; Enterprise custom tiers available. | No free trial (Interactive platform walk-through available). | Public (NASDAQ: DSP); Market Cap **~$650 Million**; Annual Revenue **~$270 Million**. |
+| **[Adform](https://adform.com/)** 🇪🇺 | European full-stack advertising engine combining DSP, DMP, and Ad Server. | Custom platform fee structure starting at ~$5,000/mo spend commitment. | No free trial (14-day guided sandbox demo for qualified agencies). | Private company; Estimated Valuation **~$450 Million**; Annual Revenue **~$120 Million**. |
+| **[Basis Technologies](https://basis.com/)** 📊 | Programmatic DSP integrated with agency workflow automation and media planning. | Minimum monthly platform spend ~$5,000/mo for agency direct accounts. | No free trial (Free product demonstration & workflow audit). | Private company; Estimated Valuation **~$400 Million**; Annual Revenue **~$180 Million**. |
+| **[Smadex](https://smadex.com/)** 📱 | Mobile-first DSP for mobile app user acquisition and programmatic retargeting. | Minimum monthly ad spend starting at $5,000/mo for performance campaigns. | No free trial (Dedicated account setup with performance guarantee terms). | Private subsidiary (Entravision); Parent Market Cap **~$150 Million**; Unit Revenue **~$60M/yr**. |
+| **[StackAdapt](https://www.stackadapt.com/)** 🚀 | Multi-channel self-serve DSP with no strict minimum spend requirements. | No platform subscription fees; Pay-as-you-go starting at $500 initial deposit. | No free trial (Free instant account creation with self-serve dashboard access). | Private company; Estimated Valuation **~$350 Million**; Annual Revenue **~$100M+**. |
+| **[Simpli.fi](https://simplifi.fi)** 📍 | Geo-fencing and localized unstructured data DSP for agencies and local brands. | Flexible SMB plans starting at $1,000/mo spend minimum. | No free trial (Custom geo-fencing demo & localized audience mapping free). | Private equity backed (GTCR/Blackstone); Estimated Valuation **~$1.5 Billion**. |
+
+---
+
+## 🔓 Open-Source GitHub Projects
+
+Open-source Demand-Side Platforms, OpenRTB protocol specifications, header bidding engines, and ad server infrastructure. Sorted by GitHub stars (descending).
+
+- **[Prebid.js](https://github.com/prebid/Prebid.js)** [![Stars](https://img.shields.io/github/stars/prebid/Prebid.js?style=social&color=white)](https://github.com/prebid/Prebid.js/stargazers) ⚡  
+  **The leading open-source header bidding library for web browsers.** Enables publishers to setup concurrent auctions across demand partners before calling the ad server. Written in JavaScript.
+
+- **[Revive Adserver](https://github.com/revive-adserver/revive-adserver)** [![Stars](https://img.shields.io/github/stars/revive-adserver/revive-adserver?style=social&color=white)](https://github.com/revive-adserver/revive-adserver/stargazers) 🎯  
+  **The world's most popular free open-source ad serving system.** Provides campaign management, ad targeting, impression tracking, and yield optimization. Written in PHP.
+
+- **[RTBKit](https://github.com/rtbkit/rtbkit)** [![Stars](https://img.shields.io/github/stars/rtbkit/rtbkit?style=social&color=white)](https://github.com/rtbkit/rtbkit/stargazers) 🛠️  
+  **Open-source software framework for creating Real-Time Bidders.** Designed for low-latency ad exchanges and DSP bidder development. Written in C++. *(Historical reference framework)*.
+
+- **[OpenRTB Specification](https://github.com/openrtb/OpenRTB)** [![Stars](https://img.shields.io/github/stars/openrtb/OpenRTB?style=social&color=white)](https://github.com/openrtb/OpenRTB/stargazers) 📖  
+  **Official standard specification repository for OpenRTB by IAB Tech Lab.** Defines protocol schemas and communication standards between supply and demand systems.
+
+- **[Prebid Server](https://github.com/prebid/prebid-server)** [![Stars](https://img.shields.io/github/stars/prebid/prebid-server?style=social&color=white)](https://github.com/prebid/prebid-server/stargazers) 🌐  
+  **Open-source server-to-server header bidding engine.** Supports OpenRTB bid adapters across CTV, mobile apps, and web environments. Written in Go (Java version also available).
+
+- **[vanilla-rtb](https://github.com/venediktov/vanilla-rtb)** [![Stars](https://img.shields.io/github/stars/venediktov/vanilla-rtb?style=social&color=white)](https://github.com/venediktov/vanilla-rtb/stargazers) ⚡  
+  **C++ Real-Time Bidding (RTB) Demand-Side Platform framework.** Extremely high-performance bidder architecture optimized for sub-10ms response times.
+
+- **[OpenRTB Go Library](https://github.com/bsm/openrtb)** [![Stars](https://img.shields.io/github/stars/bsm/openrtb?style=social&color=white)](https://github.com/bsm/openrtb/stargazers) 🐹  
+  **Lightweight OpenRTB protocol parsing and serialization library for Go.** Fast JSON encoding/decoding for RTB request/response objects.
+
+- **[OpenRTB Models for Java](https://github.com/openrtb/openrtb2x)** [![Stars](https://img.shields.io/github/stars/openrtb/openrtb2x?style=social&color=white)](https://github.com/openrtb/openrtb2x/stargazers) ☕  
+  **OpenRTB model implementation in Java using Protocol Buffers.** Official Java library providing JSON serialization helpers and proto schemas.
+
+- **[OpenRTB Go Definitions](https://github.com/mxmCherry/openrtb)** [![Stars](https://img.shields.io/github/stars/mxmCherry/openrtb?style=social&color=white)](https://github.com/mxmCherry/openrtb/stargazers) 🛠️  
+  **Actively maintained OpenRTB v2.x & v3.0 Go types and validation library.** Essential building block for modern Go DSP bidders.
+
+- **[OpenDSP](https://github.com/javagossip/opendsp)** [![Stars](https://img.shields.io/github/stars/javagossip/opendsp?style=social&color=white)](https://github.com/javagossip/opendsp/stargazers) 📱  
+  **Mobile DSP advertising platform with built-in ADX integrations and management dashboard.** Full-stack mobile ad buying platform. Written in Java.
+
+- **[RTB4FREE Bidder](https://github.com/RTB4FREE/bidder)** [![Stars](https://img.shields.io/github/stars/RTB4FREE/bidder?style=social&color=white)](https://github.com/RTB4FREE/bidder/stargazers) 🆓  
+  **Complete open-source DSP bidder framework in Java.** Features OpenRTB compliance, campaign budget pacing, geo-targeting, and UI manager integration.
+
+---
+
+## 🤝 How to Contribute
+
+Contributions are welcome! Help us keep this directory accurate and up to date.
+
+1. **Fork** this repository.
+2. Add or update entries in `README.md` following the tabular and star badge formats.
+3. Ensure links, pricing, scale metrics, and GitHub links are verified.
+4. Submit a **Pull Request** with a brief summary of additions.
+
+---
+
+## 💖 Support & Community
+
+If you find this repository helpful, please consider supporting the project:
+
+- ⭐ **Star** this repository to show appreciation.
+- 🔀 **Fork** and share with fellow AdTech engineers and marketers.
+- 💬 Join the discussion on our [Discord Community](https://discord.gg/jc4xtF58Ve).
+- ☕ **Buy a coffee & Sponsor**: [GitHub Sponsors Dashboard](https://github.com/sponsors/ishandutta2007)
+
+Thank you for supporting open-source AdTech documentation! ❤️
+
+---
+
+## ⚠️ Disclaimer
+
+- This directory is community-curated for informational and educational purposes.
+- Commercial DSP minimums and pricing models vary by contract terms, regions, and reseller partnerships.
+- Ensure full compliance with regional privacy laws (GDPR, CCPA, CPRA) and ad tech standards when handling audience data and real-time bidding protocols.
+
+---
+
+## 📈 Star History
+
+[![Star History Chart](https://star-history.dera.page/svg?repos=ishandutta2007/Awesome-Demand-Side-Platform&type=date&legend=top-left)](https://star-history.dera.page/#ishandutta2007/Awesome-Demand-Side-Platform&type=date&legend=top-left)
